@@ -1,0 +1,24 @@
+{
+  "name": "freestyleserver",
+  "version": "1.0.0",
+  "description": "你有free style吗",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cecil0o0/FreeStyleServer.git"
+  },
+  "keywords": [
+    "koa2",
+    "node",
+    "vue"
+  ],
+  "author": "chenhaojie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cecil0o0/FreeStyleServer/issues"
+  },
+  "homepage": "https://github.com/Cecil0o0/FreeStyleServer#readme"
+}

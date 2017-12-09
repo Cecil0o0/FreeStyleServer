@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "陈豪杰个人的所有服务后端支持",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.js"
+  },
+  "keywords": [
+    "koa2"
+  ],
+  "author": "chenhaojie",
+  "license": "MIT",
+  "dependencies": {
+    "free-style-plugin": "0.0.7",
+    "koa": "^2.4.1",
+    "koa-router": "^7.3.0",
+    "nodejieba": "^2.2.5"
+  }
+}

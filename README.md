@@ -1,8 +1,14 @@
 ```js
+// 统一版本前缀
+'/v1'
 // 中文韵脚查词
-require('./modules/freestyle')(router)
+'/free-style/:keyWordParam/:searchTypeParam'
+
 // 摩斯密码加解密
-require('./modules/xmorse')(router)
+'/baidu-aip/imageClassify/:category'
+
 // 百度图像识别
-require('./modules/imageClassify')(router)
+'/morse/encode'
+'/morse/decode'
+
 ```

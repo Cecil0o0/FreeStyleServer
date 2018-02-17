@@ -1,14 +1,28 @@
-```js
-// 统一版本前缀
-'/v1'
-// 中文韵脚查词
-'/free-style/:keyWordParam/:searchTypeParam'
+### 统一版本前缀
+<code>'/v1'</code>
 
-// 摩斯密码加解密
-'/baidu-aip/imageClassify/:category'
+### 中文韵脚查词
+<code>'/free-style/:keyWordParam/:searchTypeParam'</code>
 
-// 百度图像识别
-'/morse/encode'
-'/morse/decode'
+> // 搜索类型(全压，单压，英文韵脚)
+'full','single','en'
 
-```
+ex.
+> /v1/free-style/你好/full
+
+### 百度图像识别
+<code>'/baidu-aip/imageClassify/:category'</code>
+
+ex.
+> /v1/baidu-aip/imageClassify/car?url=https://www.enterprise.co.uk/content/dam/global-vehicle-images/cars/VAUX_INSI_2014.png
+
+### 摩斯密码加解密
+<code>'/morse/encode/:str'</code>  
+
+ex.
+> /v1/morse/encode/英雄
+
+<code>'/morse/decode/:code'</code>
+
+ex.
+> /v1/morse/decode/-.....-.----...-%2F-..-.--.--...-..

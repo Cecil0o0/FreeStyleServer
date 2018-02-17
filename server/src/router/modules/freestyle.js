@@ -5,7 +5,7 @@ const ResultSchema = require('../../util/resultSchema')
 function freestyle (router) {
   router.get('/free-style/:keyWordParam/:searchTypeParam', async (ctx, next) => {
     const { keyWordParam, searchTypeParam } = ctx.params
-    FreeStylePlugin.getWords(keyWordParam,searchTypeParam).then(res => {
+    await FreeStylePlugin.getWords(keyWordParam,searchTypeParam).then(res => {
       ctx.response.body = ResultSchema({
         data: res,
         state: 1000

@@ -1,0 +1,11 @@
+[
+  {
+    "name": "dpcq",
+    "title": "斗破苍穹",
+    "label": [
+      "玄幻"
+    ],
+    "isSplit": false,
+    "path": "/novel/dpcq/:id"
+  }
+]

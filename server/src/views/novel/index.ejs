@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title><%= title %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <style>
+      body {
+        margin-bottom:0;
+        margin-top:0;
+        padding-bottom:0;
+        padding-top:0;
+      }
+      .placeholder {
+        height:50px;
+      }
+      .btns{
+        position:fixed;
+        right:0;
+        left:0;
+        bottom:0;
+        display: flex;
+        justify-content: space-around;
+        height: 50px;
+        line-height: 50px;
+        background-color: rgba(255,255,255,.5);
+        color: #04a6e9;
+      }
+      .btns:before{
+        content: '';
+        display:block;
+        height:10px;
+        width:1px;
+        transform: scale(.5), translateX(-50%);
+        top: 22px;
+        left: 50%;
+        background-color: #999;
+        position:absolute;
+      }
+    </style>
+</head>
+<body>
+    <div style="white-space:pre-line;">
+      <%= content%>
+    </div>
+    <div class="placeholder">
+      <div class="btns">
+        <div class="last">上一章</div>
+        <div class="next">下一章</div>
+      </div>
+    </div>
+    <script>
+      window.novelId = '<%= novel.id %>'
+      window.novelName = '<%= novel.name %>'
+      window.baseURL = '<%= baseURL %>'
+      document.querySelector('.last').addEventListener('click', function() {
+        window.location.href = window.baseURL + '/' + novelName + '/' + (Number(novelId) - 1)
+      }, false)
+      document.querySelector('.next').addEventListener('click', function() {
+        window.location.href = window.baseURL + '/' + novelName + '/' + (Number(novelId) + 1)
+      }, false)
+    </script>
+</body>
+</html>

@@ -12,5 +12,7 @@ require('./modules/xmorse')(router)
 require('./modules/speech')(router)
 // 百度图像识别
 require('./modules/imageClassify')(router)
+// 小说
+require('./modules/novel')(router)
 
 module.exports = router

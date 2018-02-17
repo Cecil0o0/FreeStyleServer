@@ -38,7 +38,7 @@ Axios.interceptors.request.use(config => {
 
   return config
 }, thrown => {
-  console.log('请检查网络1')
+  console.log('服务器繁忙')
   return Promise.reject(thrown)
 })
 
@@ -67,7 +67,7 @@ Axios.interceptors.response.use(res => {
   if (axios.isCancel(thrown)) {
     console.log('Request canceled', thrown.message)
   } else {
-    console.log('请检查网络2')
+    console.log('服务器繁忙')
   }
   // 网络故障，重置所有请求
   requestMap = {}

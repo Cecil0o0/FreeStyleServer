@@ -1,6 +1,8 @@
 const Koa = require('koa')
 const router = require('./router')
+const views = require('koa-views')
 const Boom = require('boom')
+const path = require('path')
 
 const app = new Koa()
 
@@ -9,6 +11,11 @@ app.use(async (ctx, next) => {
   ctx.set('Content-Type', 'application/json')
   await next()
 })
+
+// 加载模板引擎
+app.use(views(path.join(__dirname, './views'), {
+  extension: 'ejs'
+}))
 
 // koa-router
 app.use(router.routes())
@@ -20,8 +27,6 @@ app.use(router.allowedMethods({
 
 // static resources
 app.use(require('koa-static')(__dirname + '/dist'))
-
-// middleware
 
 app.listen(3000)
 

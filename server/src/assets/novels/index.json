@@ -3,9 +3,25 @@
     "name": "dpcq",
     "title": "斗破苍穹",
     "label": [
-      "玄幻"
+      "玄幻",
+      "萧炎",
+      "萧薰儿",
+      "彩鳞",
+      "小医仙",
+      "药老"
+    ],
+    "isSplit": true,
+    "path": "/novel/dpcq/:id"
+  },
+  {
+    "name": "dldl",
+    "title": "斗罗大陆",
+    "label": [
+      "玄幻",
+      "唐三",
+      "小舞"
     ],
     "isSplit": false,
-    "path": "/novel/dpcq/:id"
+    "path": "/novel/dldl/:id"
   }
 ]

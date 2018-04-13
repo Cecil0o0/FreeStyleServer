@@ -14,20 +14,20 @@ ex.
 <code>/baidu-aip/imageClassify/:category</code>
 
 ex.
-[/v1/baidu-aip/imageClassify/car?url=https://www.enterprise.co.uk/content/dam/global-vehicle-images/cars/VAUX_INSI_2014.png](http://qingf.me:3000/v1/baidu-aip/imageClassify/car?url=https://www.enterprise.co.uk/content/dam/global-vehicle-images/cars/VAUX_INSI_2014.png)
+[/v1/baidu-aip/imageClassify/car?url=https://www.enterprise.co.uk/content/dam/global-vehicle-images/cars/VAUX_INSI_2014.png](http://qingf.me:3000/v1/baidu-aip/imageClassify/car?url=https://car3.autoimg.cn/cardfs/product/g14/M0C/CF/94/1024x0_1_q87_autohomecar__wKgH1VlBDSqAfqpuAAnlqDc2tO8436.jpg)
 
-### 摩斯密码加解密
-<code>/morse/encode/:str</code>  
+### 摩斯密码编解码
+<code>/morse/encode/:str</code>  
 
 ex.
-[/v1/morse/encode/英雄](http://qinf.me:3000/v1/morse/encode/英雄)
+[/v1/morse/encode/英雄](http://qingf.me:3000/v1/morse/encode/英雄)
 
 <code>/morse/decode/:code</code>
 
 ex.
 [/v1/morse/decode/-.....-.----...-%2F-..-.--.--...-..](http://qingf.me:3000/v1/morse/decode/-.....-.----...-%2F-..-.--.--...-..)
 
-### 在线小说(支持斗破苍穹，斗罗大陆)
+### 在线小说(支持斗破苍穹，斗罗大陆，琴帝)
 
 <code>/v1/novels/:name/:id</code>
 

@@ -32,4 +32,9 @@ ex.
 <code>/v1/novels/:name/:id</code>
 
 ex.
-[/v1/novels/dpcq/0](http://qingf.me:3000/v1/novels/dpcq/0)
+[/v1/novels/dpcq/1](http://qingf.me:3000/v1/novels/dpcq/1)
+
+OR
+
+ex.
+[http://novel.qingf.me/dpcq/1](http://novel.qingf.me/dpcq/1)
